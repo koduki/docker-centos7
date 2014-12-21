@@ -32,3 +32,8 @@ RUN echo "docker    ALL=(ALL)       ALL" >> /etc/sudoers.d/docker
 # App Dir
 #
 RUN echo 'export PATH=/usr/local/bin:$PATH' >> /root/.bashrc
+
+#
+# RUN
+#
+ENTRYPOINT ["/bin/bash", "-c"]
